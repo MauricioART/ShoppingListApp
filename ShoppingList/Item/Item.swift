@@ -8,14 +8,14 @@
 import UIKit
 
 class Item: UIView {
+    
+    weak var delegate: ItemDelegate?
+    
+    
     @IBOutlet private weak var imageView: UIImageView!
     @IBOutlet private weak var itemName: UILabel!
     @IBOutlet private weak var addButton: UIButton!
     
-    enum ButtonState {
-        case selected
-        case unselected
-    }
     
     var buttonState : ButtonState = .unselected
     
@@ -39,6 +39,7 @@ class Item: UIView {
     private func setViewBundleInit() {
         guard let contentView = Bundle.main.loadNibNamed("Item", owner: self)?.first as? UIView else { return }
         addSubview(contentView)
+        
         contentView.translatesAutoresizingMaskIntoConstraints = false
         contentView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         contentView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
@@ -57,7 +58,20 @@ class Item: UIView {
             addButton.tintColor = .systemMint
             buttonState = .selected
         }
-        
+        delegate?.didTapButton(with: self.model, state: buttonState)
+//        addButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
     }
     
+//    @objc private func buttonTapped() {
+//        delegate?.didTapButton(with: self.model)
+//    }
+    
+}
+enum ButtonState {
+    case selected
+    case unselected
+}
+
+protocol ItemDelegate: AnyObject {
+    func didTapButton(with info: ItemModel, state : ButtonState)
 }
