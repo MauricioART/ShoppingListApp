@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,17 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductsViewController" customModule="ShoppingList" customModuleProvider="target">
             <connections>
                 <outlet property="cartButton" destination="QJd-Um-PBO" id="Y8G-aL-jKO"/>
-                <outlet property="item1" destination="BrG-2M-zuy" id="pwS-ds-Gte"/>
-                <outlet property="item10" destination="6nh-hx-i7k" id="x5e-xo-EVG"/>
-                <outlet property="item2" destination="Adh-iy-2nb" id="MwQ-lv-jZk"/>
-                <outlet property="item3" destination="Q2r-Kg-E8o" id="e2h-K3-0xs"/>
-                <outlet property="item4" destination="aTu-PG-65A" id="yAr-pJ-W4U"/>
-                <outlet property="item5" destination="KqJ-0B-ayl" id="zbc-yN-HLQ"/>
-                <outlet property="item6" destination="uW7-9V-H2z" id="Y0o-Vc-Wxt"/>
-                <outlet property="item7" destination="EdM-Ur-wG5" id="DmD-7w-JJp"/>
-                <outlet property="item8" destination="GRB-uT-29g" id="ogI-VD-kQm"/>
-                <outlet property="item9" destination="lpb-RN-JsU" id="KWi-8u-bn2"/>
-                <outlet property="scrollView" destination="2im-rQ-C1N" id="s1T-Be-cxG"/>
+                <outlet property="tableView" destination="XxC-Zb-Utw" id="oFn-z0-jvL"/>
                 <outlet property="view" destination="iN0-l3-epB" id="1Uv-tU-1L9"/>
             </connections>
         </placeholder>
@@ -41,109 +31,26 @@
                         <action selector="openShoppingList" destination="-1" eventType="touchUpInside" id="1hy-eA-MzP"/>
                     </connections>
                 </button>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="2im-rQ-C1N">
-                    <rect key="frame" x="0.0" y="111" width="393" height="741"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrG-2M-zuy" userLabel="Item1" customClass="Item" customModule="ShoppingList" customModuleProvider="target">
-                            <rect key="frame" x="78.666666666666671" y="10" width="235.66666666666663" height="212"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Adh-iy-2nb" userLabel="Item2" customClass="Item" customModule="ShoppingList" customModuleProvider="target">
-                            <rect key="frame" x="76.666666666666686" y="232" width="240" height="212.33333333333337"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q2r-Kg-E8o" userLabel="Item3" customClass="Item" customModule="ShoppingList" customModuleProvider="target">
-                            <rect key="frame" x="76.666666666666686" y="454.33333333333337" width="240" height="212"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aTu-PG-65A" userLabel="Item4" customClass="Item" customModule="ShoppingList" customModuleProvider="target">
-                            <rect key="frame" x="76.666666666666686" y="676.33333333333337" width="240" height="212"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KqJ-0B-ayl" userLabel="Item5" customClass="Item" customModule="ShoppingList" customModuleProvider="target">
-                            <rect key="frame" x="76.666666666666686" y="898.33333333333337" width="240" height="212.33333333333337"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uW7-9V-H2z" userLabel="Item6" customClass="Item" customModule="ShoppingList" customModuleProvider="target">
-                            <rect key="frame" x="76.666666666666686" y="1120.6666666666667" width="240" height="212"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EdM-Ur-wG5" userLabel="item7" customClass="Item" customModule="ShoppingList" customModuleProvider="target">
-                            <rect key="frame" x="76.666666666666686" y="1342.6666666666667" width="240" height="212"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRB-uT-29g" userLabel="Item8" customClass="Item" customModule="ShoppingList" customModuleProvider="target">
-                            <rect key="frame" x="76.666666666666686" y="1564.6666666666667" width="240" height="212"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lpb-RN-JsU" userLabel="item9" customClass="Item" customModule="ShoppingList" customModuleProvider="target">
-                            <rect key="frame" x="76.666666666666686" y="1786.6666666666667" width="240" height="212.33333333333326"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6nh-hx-i7k" userLabel="item10" customClass="Item" customModule="ShoppingList" customModuleProvider="target">
-                            <rect key="frame" x="76.666666666666686" y="2009" width="240" height="212"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        </view>
-                    </subviews>
-                    <viewLayoutGuide key="safeArea" id="nlf-Ff-bPz"/>
-                    <constraints>
-                        <constraint firstItem="lpb-RN-JsU" firstAttribute="width" secondItem="nlf-Ff-bPz" secondAttribute="width" multiplier="0.610687" id="0bO-8V-Wtv"/>
-                        <constraint firstItem="aTu-PG-65A" firstAttribute="width" secondItem="nlf-Ff-bPz" secondAttribute="width" multiplier="0.610687" id="1J9-Va-CzX"/>
-                        <constraint firstItem="6nh-hx-i7k" firstAttribute="centerX" secondItem="2im-rQ-C1N" secondAttribute="centerX" id="2n7-CB-czH"/>
-                        <constraint firstItem="KqJ-0B-ayl" firstAttribute="width" secondItem="nlf-Ff-bPz" secondAttribute="width" multiplier="0.610687" id="2vZ-OM-PJP"/>
-                        <constraint firstItem="uW7-9V-H2z" firstAttribute="width" secondItem="nlf-Ff-bPz" secondAttribute="width" multiplier="0.610687" id="57O-N9-21C"/>
-                        <constraint firstItem="EdM-Ur-wG5" firstAttribute="centerX" secondItem="2im-rQ-C1N" secondAttribute="centerX" id="7om-Ym-WTK"/>
-                        <constraint firstItem="GRB-uT-29g" firstAttribute="height" secondItem="nlf-Ff-bPz" secondAttribute="height" multiplier="0.3" id="826-AG-Mod"/>
-                        <constraint firstItem="lpb-RN-JsU" firstAttribute="centerX" secondItem="2im-rQ-C1N" secondAttribute="centerX" id="82c-TQ-ueN"/>
-                        <constraint firstItem="Q2r-Kg-E8o" firstAttribute="width" secondItem="nlf-Ff-bPz" secondAttribute="width" multiplier="0.610687" id="9aF-AZ-fMy"/>
-                        <constraint firstItem="uW7-9V-H2z" firstAttribute="height" secondItem="nlf-Ff-bPz" secondAttribute="height" multiplier="0.3" id="BH8-dN-hed"/>
-                        <constraint firstItem="KqJ-0B-ayl" firstAttribute="top" secondItem="aTu-PG-65A" secondAttribute="bottom" constant="10" id="D6d-OJ-cxE"/>
-                        <constraint firstItem="aTu-PG-65A" firstAttribute="height" secondItem="nlf-Ff-bPz" secondAttribute="height" multiplier="0.3" id="Exd-H5-z7g"/>
-                        <constraint firstItem="BrG-2M-zuy" firstAttribute="top" secondItem="lWs-zp-0be" secondAttribute="top" constant="10" id="Fcq-ec-ZJw"/>
-                        <constraint firstItem="EdM-Ur-wG5" firstAttribute="width" secondItem="nlf-Ff-bPz" secondAttribute="width" multiplier="0.610687" id="IzS-bm-Uzq"/>
-                        <constraint firstItem="lpb-RN-JsU" firstAttribute="top" secondItem="GRB-uT-29g" secondAttribute="bottom" constant="10" id="KmN-RM-68n"/>
-                        <constraint firstItem="Adh-iy-2nb" firstAttribute="top" secondItem="BrG-2M-zuy" secondAttribute="bottom" constant="10" id="MIi-c3-L3O"/>
-                        <constraint firstItem="uW7-9V-H2z" firstAttribute="centerX" secondItem="2im-rQ-C1N" secondAttribute="centerX" id="MRE-OA-kSH"/>
-                        <constraint firstItem="BrG-2M-zuy" firstAttribute="centerX" secondItem="2im-rQ-C1N" secondAttribute="centerX" id="O0g-Wq-LQC"/>
-                        <constraint firstItem="Q2r-Kg-E8o" firstAttribute="height" secondItem="nlf-Ff-bPz" secondAttribute="height" multiplier="0.3" id="OWf-lF-PuO"/>
-                        <constraint firstItem="Adh-iy-2nb" firstAttribute="height" secondItem="nlf-Ff-bPz" secondAttribute="height" multiplier="0.3" id="Oln-4A-LeA"/>
-                        <constraint firstItem="lpb-RN-JsU" firstAttribute="height" secondItem="nlf-Ff-bPz" secondAttribute="height" multiplier="0.3" id="RVT-lm-Bh3"/>
-                        <constraint firstItem="Q2r-Kg-E8o" firstAttribute="centerX" secondItem="2im-rQ-C1N" secondAttribute="centerX" id="Rny-1M-V6f"/>
-                        <constraint firstItem="aTu-PG-65A" firstAttribute="top" secondItem="Q2r-Kg-E8o" secondAttribute="bottom" constant="10" id="Rrv-3B-XFf"/>
-                        <constraint firstItem="uW7-9V-H2z" firstAttribute="top" secondItem="KqJ-0B-ayl" secondAttribute="bottom" constant="10" id="Zvz-cU-cF6"/>
-                        <constraint firstItem="GRB-uT-29g" firstAttribute="width" secondItem="nlf-Ff-bPz" secondAttribute="width" multiplier="0.610687" id="dfH-PS-Zxq"/>
-                        <constraint firstItem="EdM-Ur-wG5" firstAttribute="top" secondItem="uW7-9V-H2z" secondAttribute="bottom" constant="10" id="dox-fn-Map"/>
-                        <constraint firstItem="Adh-iy-2nb" firstAttribute="width" secondItem="nlf-Ff-bPz" secondAttribute="width" multiplier="0.610687" id="eMM-oC-6fP"/>
-                        <constraint firstItem="BrG-2M-zuy" firstAttribute="width" secondItem="nlf-Ff-bPz" secondAttribute="width" multiplier="0.6" id="eYf-lO-ygh"/>
-                        <constraint firstItem="6nh-hx-i7k" firstAttribute="height" secondItem="nlf-Ff-bPz" secondAttribute="height" multiplier="0.3" id="ez2-u7-GKl"/>
-                        <constraint firstItem="GRB-uT-29g" firstAttribute="centerX" secondItem="2im-rQ-C1N" secondAttribute="centerX" id="hIO-b7-XNQ"/>
-                        <constraint firstItem="6nh-hx-i7k" firstAttribute="width" secondItem="nlf-Ff-bPz" secondAttribute="width" multiplier="0.610687" id="ipt-Hy-kA0"/>
-                        <constraint firstItem="KqJ-0B-ayl" firstAttribute="height" secondItem="nlf-Ff-bPz" secondAttribute="height" multiplier="0.3" id="jaE-7H-6jc"/>
-                        <constraint firstItem="Q2r-Kg-E8o" firstAttribute="top" secondItem="Adh-iy-2nb" secondAttribute="bottom" constant="10" id="lCw-gx-kBm"/>
-                        <constraint firstItem="6nh-hx-i7k" firstAttribute="top" secondItem="lpb-RN-JsU" secondAttribute="bottom" constant="10" id="mEr-lK-UyQ"/>
-                        <constraint firstItem="KqJ-0B-ayl" firstAttribute="centerX" secondItem="2im-rQ-C1N" secondAttribute="centerX" id="poQ-EY-6YZ"/>
-                        <constraint firstItem="aTu-PG-65A" firstAttribute="centerX" secondItem="2im-rQ-C1N" secondAttribute="centerX" id="sam-oa-lhU"/>
-                        <constraint firstItem="EdM-Ur-wG5" firstAttribute="height" secondItem="nlf-Ff-bPz" secondAttribute="height" multiplier="0.3" id="spS-et-j5S"/>
-                        <constraint firstItem="Adh-iy-2nb" firstAttribute="centerX" secondItem="2im-rQ-C1N" secondAttribute="centerX" id="uG5-3D-usP"/>
-                        <constraint firstItem="BrG-2M-zuy" firstAttribute="height" secondItem="nlf-Ff-bPz" secondAttribute="height" multiplier="0.3" id="wyF-Fy-YSK"/>
-                        <constraint firstItem="GRB-uT-29g" firstAttribute="top" secondItem="EdM-Ur-wG5" secondAttribute="bottom" constant="10" id="xPA-7a-E66"/>
-                    </constraints>
-                    <viewLayoutGuide key="contentLayoutGuide" id="lWs-zp-0be"/>
-                    <viewLayoutGuide key="frameLayoutGuide" id="fWr-bx-2Xg"/>
-                </scrollView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Shopping List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKx-nP-WOu">
                     <rect key="frame" x="100.66666666666669" y="79" width="192" height="27"/>
                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
                     <color key="textColor" systemColor="systemBlueColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XxC-Zb-Utw">
+                    <rect key="frame" x="20" y="136" width="353" height="652"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XxC-Zb-Utw" secondAttribute="trailing" constant="20" id="9Q2-DB-CaU"/>
                 <constraint firstItem="tKx-nP-WOu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HGG-hG-EJp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="XxC-Zb-Utw" secondAttribute="bottom" constant="30" id="QQZ-Gb-qls"/>
+                <constraint firstItem="XxC-Zb-Utw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="UY8-ZK-tGu"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QJd-Um-PBO" secondAttribute="trailing" constant="20" id="it1-u2-leu"/>
+                <constraint firstItem="XxC-Zb-Utw" firstAttribute="top" secondItem="tKx-nP-WOu" secondAttribute="bottom" constant="30" id="nj6-tz-Djf"/>
                 <constraint firstItem="QJd-Um-PBO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="oD8-LK-Pdw"/>
                 <constraint firstItem="tKx-nP-WOu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="thH-XL-CCP"/>
             </constraints>

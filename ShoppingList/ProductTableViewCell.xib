@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductTableViewCell" customModule="ShoppingList" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="285" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="ShoppingList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="285"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="381" height="285"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kum-D7-c9h">
+                        <rect key="frame" x="10" y="30" width="361" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="z1C-ZV-aKZ"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4k1-X5-waO">
+                        <rect key="frame" x="149" y="240" width="203" height="142"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="plus" title="Button"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRM-ep-x9X">
+                        <rect key="frame" x="10" y="9.9999999999999982" width="361" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Kum-D7-c9h" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1KJ-Zc-Oex"/>
+                    <constraint firstItem="4k1-X5-waO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7HR-E5-yvC"/>
+                    <constraint firstItem="Kum-D7-c9h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="EFx-uv-igH"/>
+                    <constraint firstItem="4k1-X5-waO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="149" id="EqH-Zp-j93"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="4k1-X5-waO" secondAttribute="bottom" constant="-34.333333333333371" id="Hwt-AP-Coh"/>
+                    <constraint firstItem="Kum-D7-c9h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="NkW-xR-fTE"/>
+                    <constraint firstItem="FRM-ep-x9X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ROi-Xw-AKn"/>
+                    <constraint firstItem="4k1-X5-waO" firstAttribute="top" secondItem="Kum-D7-c9h" secondAttribute="bottom" constant="10" id="Sqq-zq-KdF"/>
+                    <constraint firstItem="FRM-ep-x9X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="e00-za-2h8"/>
+                    <constraint firstAttribute="trailing" secondItem="FRM-ep-x9X" secondAttribute="trailing" constant="10" id="pHG-Dp-vIW"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Kum-D7-c9h" secondAttribute="trailing" constant="10" id="sbK-c2-dMf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addButton" destination="4k1-X5-waO" id="Mbq-tW-INY"/>
+                <outlet property="productImage" destination="Kum-D7-c9h" id="pzN-Cz-n1n"/>
+                <outlet property="productName" destination="FRM-ep-x9X" id="Xoq-Xc-2fF"/>
+            </connections>
+            <point key="canvasLocation" x="77.099236641221367" y="104.5774647887324"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="plus" width="128" height="128"/>
+    </resources>
+</document>

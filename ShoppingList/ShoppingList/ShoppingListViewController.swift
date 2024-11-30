@@ -60,7 +60,7 @@ import UIKit
 //}
 class ShoppingListViewController: UIViewController {
 
-    var productsAdded: [ItemModel] = []
+    var productsAdded: [ProductModel] = []
     
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var scrollView: UIScrollView!

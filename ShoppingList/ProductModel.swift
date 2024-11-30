@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct ItemModel {
+struct ProductModel : Hashable{
     var image: UIImage
     var name: String
 }
