@@ -17,10 +17,12 @@ class ProductsViewController: UIViewController {
     var dataSource: UITableViewDiffableDataSource<Int,ProductModel>?
     
     var productsAdded: [ProductModel] = []
+    var products: [ProductModel] = []
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setProducts()
         setDataSource()
         setSnapshot()
         
@@ -38,7 +40,7 @@ class ProductsViewController: UIViewController {
     func setSnapshot(){
         var snapshot = NSDiffableDataSourceSnapshot<Int,ProductModel>()
         snapshot.appendSections([0])
-        snapshot.appendItems([])
+        snapshot.appendItems(products)
         dataSource?.apply(snapshot)
     }
     
@@ -52,6 +54,19 @@ class ProductsViewController: UIViewController {
         present(shoppingListController, animated: true)
     }
     
+    private func setProducts() {
+        products.append(ProductModel(image: UIImage.item1, name: "Item 1"))
+        products.append(ProductModel(image: UIImage.item2, name: "Item 2"))
+        products.append(ProductModel(image: UIImage.item3, name: "Item 3"))
+        products.append(ProductModel(image: UIImage.item4, name: "Item 4"))
+        products.append(ProductModel(image: UIImage.item5, name: "Item 5"))
+        products.append(ProductModel(image: UIImage.item6, name: "Item 6"))
+        products.append(ProductModel(image: UIImage.item7, name: "Item 7"))
+        products.append(ProductModel(image: UIImage.item8, name: "Item 8"))
+        products.append(ProductModel(image: UIImage.item9, name: "Item 9"))
+        products.append(ProductModel(image: UIImage.item10, name: "Item 10"))
+        
+    }
 }
 
 extension ProductsViewController : UITableViewDelegate{
